@@ -6,416 +6,50 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Hodu</title>
-    <style>
+    <link rel="stylesheet" href="css/hoduStyle.css">
 
-        /* reset css */
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed,
-        figure, figcaption, footer, header, hgroup,
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
-            margin: 0;
-            padding : 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-
-        @font-face {
-            font-family: 'Pretendard';
-            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
-
-
-
-        .div-head
-        {
-            background-color: #F2E9D8;
-            width: 1920px;
-            height: 900px;
-            padding-left: 320px;
-            padding-right: 320px;
-            padding-top: 31px;
-            box-sizing: border-box;
-        }
-
-        .header-head
-        {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        ul
-        {
-            list-style: none;
-        }
-
-        .nav-link
-        {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-
-            font-family: Pretendard,Serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 20px;
-        }
-
-        .button-download
-        {
-            border-radius: 40px;
-            background: #D97652;
-            flex-shrink: 0;
-            border: none;
-            width: 140px;
-            height: 50px;
-
-            color: #FFFFFF;
-            text-align: center;
-            font-family: Pretendard,Serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 20px; /* 125% */
-        }
-
-
-
-
-
-        .div-head_main
-        {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 32px;
-        }
-
-        .div-head_p
-        {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        .p-biggest
-        {
-            color: #000;
-            font-family: Pretendard,Serif;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 60px; /* 125% */
-        }
-
-        .p-normal
-        {
-            color: #000;
-            font-family: Pretendard,Serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 20px; /* 125% */
-        }
-
-
-        .image-cat0
-        {
-            margin-top: 22px;
-        }
-
-
-
-        main
-        {
-            padding-left: 320px;
-            padding-right: 320px;
-            padding-top : 80px;
-            width: 1980px;
-            box-sizing: border-box;
-        }
-
-        .div-main1
-        {
-            display: flex;
-            gap: 110px;
-            margin-bottom: 120px;
-        }
-
-        .img-normal
-        {
-            border-radius: 30px;
-            box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
-        }
-
-        .p-big
-        {
-            color: #000;
-            font-family: Pretendard,Serif;
-            font-size: 36px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 45px; /* 125% */
-        }
-
-        .div-main1_p
-        {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 30px;
-        }
-
-
-        .div-main2
-        {
-            text-align: center;
-        }
-
-        .h2-div-main2
-        {
-            color: #D97652;
-            text-align: center;
-            font-family: Pretendard,Serif;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 60px; /* 125% */
-        }
-
-        .p-div-main2
-        {
-            color: #000;
-            font-family: Pretendard,Serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 20px; /* 125% */
-            margin-top: 40px;
-            margin-bottom: 88px;
-        }
-
-        span
-        {
-            color: #D97652;
-            font-family: Pretendard,Serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 20px;
-        }
-
-
-
-        .div-catImages
-        {
-            display: flex;
-            gap: 72px;
-            flex-wrap: wrap;
-        }
-
-        .p-main-div2
-        {
-            color: #000;
-            text-align: center;
-            font-family: Pretendard,Serif;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 30px; /* 125% */
-
-            margin-top: 100px;
-            margin-bottom: 28px;
-        }
-
-
-
-
-        hr
-        {
-            margin-top: 80px;
-            margin-bottom: 68px;
-        }
-
-        .p-map
-        {
-            color: #606367;
-            font-family: Pretendard,Serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 20px; /* 125% */
-
-            margin-top: 20px;
-            margin-bottom: 14px;
-        }
-
-        #map
-        {
-            width:100%;
-            height:350px;
-        }
-
-
-        .div-subscribe
-        {
-            position: relative;
-            top: 80px;
-
-            border-radius: 30px;
-            background: #263140;
-            box-sizing: border-box;
-
-            width: 1280px;
-            height: 200px;
-            flex-shrink: 0;
-
-            color: #FFFFFF;
-
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .div-subscirbe_text
-        {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-
-        .h3-div_subscribe
-        {
-            color: #FFFFFF;
-            font-family: Pretendard,Serif;
-            font-size: 36px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 45px; /* 125% */
-        }
-
-        .p-div_subscribe
-        {
-            color: #F2E9D8;
-            font-family: Pretendard,Serif;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 18px; /* 128.571% */
-        }
-
-        .label-subscribe
-        {
-            width: 530px;
-            height: 60px;
-            flex-shrink: 0;
-            border-radius: 60px;
-            background: #FFF;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        .input-subscribe
-        {
-            border-width: 0px;
-        }
-
-
-        .img-bg
-        {
-            width: 1920px;
-            height: 340px;
-
-            box-sizing: border-box;
-            object-fit: cover;
-        }
-
-
-
-        footer
-        {
-            padding-left: 320px;
-            padding-right: 320px;
-            margin-top : 45px;
-            width: 1980px;
-            box-sizing: border-box;
-            margin-bottom: 45px;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .ul-footer_link
-        {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-
-    </style>
 </head>
 <body>
 
+<div class = "total">
+
 <div class = "div-head">
-    <header class = "header-head">
+    <header>
         <img src="Logo-fin.png" alt="logo-mini">
-        <nav class = "nav-menu">
-            <ul class = "nav-link">
-                <li>Home</li>
-                <li>About</li>
-                <li style="margin-right: 19px">Support</li>
+        <nav>
+            <ul class = "nav-topMenu">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a></li>
+                <li id="li-topMenu_rightMargin"><a href="#">Support</a></li>
                 <li><button class = "button-download">Download</button></li>
             </ul>
         </nav>
     </header>
 
-
     <div class = "div-head_main">
-
-        <div class = "div-head_p">
-            <p class = "p-biggest">Lorem ipsum is simply<br> dummy text of the printing and </p>
+        <div class = "div-head_text">
+            <h1 class = "h1-biggest">Lorem ipsum is simply<br>dummy text of the printing and </h1>
             <p class = "p-normal">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry<br>Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown</p>
             <button class = "button-download">Download</button>
         </div>
 
-
-        <img class = "image-cat0" src="img_cat_png.png" alt="cat">
-
+        <img src="img_cat_png.png" alt="cat_box">
     </div>
 </div>
 
 <main>
-    <div class = "div-main1">
+    <section class = "section-main1">
         <img src="img_0.png" class = "img-normal" alt="">
 
-        <div class = "div-main1_p">
-            <p class="p-big">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</p>
+        <div class = "div-main1-section">
+            <h2 class="h2-big">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</h2>
             <p class="p-normal">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.</p>
         </div>
+    </section>
 
-    </div>
-
-    <div class = "div-main2">
-        <h2 class = "h2-div-main2">dummy text of the printing and dummy</h2>
-        <p class ="p-div-main2">Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+    <section class = "section-main2">
+        <h2 class = "h2-main-section">dummy text of the printing and dummy</h2>
+        <p class ="p-main-section">Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
 
         <div class = "div-catImages">
             <img src="img_1.png" class="img-normal" alt="">
@@ -426,58 +60,59 @@
             <img src="img_6.png" class="img-normal" alt="">
         </div>
 
-        <p class = "p-main-div2">Continue exploring HODU</p>
+        <p class = "p-main-section2">Continue exploring HODU</p>
         <button class ="button-download">
             Show more
         </button>
-    </div>
+    </section>
 
     <hr>
 
-    <div class="div-map">
-        <p class = "p-big">Where you'll be</p>
+    <section class="section-main_map">
+        <h2 class = "h2-big">Where you'll be</h2>
         <p class="p-map">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
         <!--    지도 추가 예정-->
-    </div>
 
-    <div id="map"></div>
+        <div id="map"></div>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bff396b17a9ff48bf012183a9e2169a9"></script>
-    <script>
-        var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-            mapOption = {
-                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bff396b17a9ff48bf012183a9e2169a9"></script>
+        <script>
+            let mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                mapOption = {
+                    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                };
 
-        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-        var map = new kakao.maps.Map(mapContainer, mapOption);
-    </script>
+            // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+            let map = new kakao.maps.Map(mapContainer, mapOption);
+        </script>
+    </section>
 
 
 
-    <div class="div-subscribe">
-        <div class ="div-subscirbe_text">
-            <h3 class = "h3-div_subscribe">Subscribe to our Blog post</h3>
-            <p class = "p-div_subscribe">
+    <section class="section-subscribe">
+        <div class ="div-subscribe_text">
+            <h3 class = "h3-section_subscribe">Subscribe to our Blog post</h3>
+            <p class = "p-section_subscribe">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
                 Lorem Ipsum has been the industry's standard dummy text
             </p>
 
         </div>
-        <form action="#" >
-            <label class ="label-subscribe">
-                <img src="mail.png" alt="">
+        <form action="#" class ="form-subscribe">
+
+                <img src="mail.png" class = "img-subscribe_mail" alt="">
                 <input type="email" class="input-subscribe" placeholder="Enter your e-mail address">
-                <button class = "button-download">Subscribe</button>
-            </label>
+                <button id= "button-modal" class = "button-subscribe">Subscribe</button>
         </form>
-    </div>
+    </section>
+
 
 
 </main>
 <div class ="div-catBG">
     <img src="img_bg.png" class = "img-bg" alt="">
+    <img class = "img-top" src="scroll-top-btn.png" alt="">
 </div>
 
 
@@ -501,7 +136,18 @@
 
 </footer>
 
+<section id = "section-modal">
+    <img src="hodu_face.png" alt="">
+    <h3 class="h3-modal">Thank you!</h3>
+    <p class = "p-modal">Lorem Ipsum is simply dummy text of the printing industry.</p>
+    <button id = "button-modal_close" class="button-modal">OK! I Lovs HODU</button>
+</section>
 
 
+
+
+<script src="js/hoduScript.js"></script>
+
+</div>
 </body>
 </html>
