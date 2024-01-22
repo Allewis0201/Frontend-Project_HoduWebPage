@@ -37,10 +37,13 @@
     </div>
 </div>
 
+    <section>
+
+    </section>
+
 <main>
     <section class = "section-main1">
         <img src="img_0.png" class = "img-normal" alt="">
-
         <div class = "div-main1-section">
             <h2 class="h2-big">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</h2>
             <p class="p-normal">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.</p>
@@ -51,17 +54,17 @@
         <h2 class = "h2-main-section">dummy text of the printing and dummy</h2>
         <p class ="p-main-section">Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
 
-        <div class = "div-catImages">
-            <img src="img_1.png" class="img-normal" alt="">
-            <img src="img_2.png" class="img-normal" alt="">
-            <img src="img_3.png" class="img-normal" alt="">
-            <img src="img_4.png" class="img-normal" alt="">
-            <img src="img_5.png" class="img-normal" alt="">
-            <img src="img_6.png" class="img-normal" alt="">
+        <div class = "div-catImages" id="div-infiniteScroll">
+            <img src="img_1.png" class="img-list" alt="">
+            <img src="img_2.png" class="img-list" alt="">
+            <img src="img_3.png" class="img-list" alt="">
+            <img src="img_4.png" class="img-list" alt="">
+            <img src="img_5.png" class="img-list" alt="">
+            <img src="img_6.png" class="img-list" alt="">
         </div>
 
         <p class = "p-main-section2">Continue exploring HODU</p>
-        <button class ="button-download">
+        <button class ="button-download" id="scrollButton">
             Show more
         </button>
     </section>
@@ -82,12 +85,10 @@
                     center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
                     level: 3 // 지도의 확대 레벨
                 };
-
             // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
             let map = new kakao.maps.Map(mapContainer, mapOption);
         </script>
     </section>
-
 
 
     <section class="section-subscribe">
@@ -97,22 +98,17 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
                 Lorem Ipsum has been the industry's standard dummy text
             </p>
-
         </div>
         <form action="#" class ="form-subscribe">
-
                 <img src="mail.png" class = "img-subscribe_mail" alt="">
-                <input type="email" class="input-subscribe" placeholder="Enter your e-mail address">
+                <input type="email" class="input-subscribe" placeholder="Enter your e-mail address" required>
                 <button id= "button-modal" class = "button-subscribe">Subscribe</button>
         </form>
     </section>
-
-
-
 </main>
 <div class ="div-catBG">
     <img src="img_bg.png" class = "img-bg" alt="">
-    <img class = "img-top" src="scroll-top-btn.png" alt="">
+    <!--<img class = "img-top" src="scroll-top-btn.png" alt="">-->
 </div>
 
 
@@ -144,9 +140,8 @@
 </section>
 
 
-
-
 <script src="js/hoduScript.js"></script>
+    <script src="js/InfiniteScroll.js"></script>
 
 </div>
 </body>
