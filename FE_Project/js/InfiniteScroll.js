@@ -10,7 +10,6 @@ window.addEventListener("beforeunload",()=>{
 
 scrollOn.addEventListener('click',()=> {
     scroll = true;
-    console.log("test");
     if(scroll===true)
     {
         makeImages();

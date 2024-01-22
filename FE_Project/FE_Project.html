@@ -11,129 +11,134 @@
 </head>
 <body>
 
-<div class="div-total">
-    <div id="div-head">
-        <header>
-            <img src="images/Logo-fin.png" alt="logo-mini">
-            <nav>
-                <ul class="ul-topMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li class="li-topMenu_rightMargin"><a href="#">Support</a></li>
-                    <li><a href="#" download="">
+<div class="div-body">
+
+    <div class="div-total">
+
+
+        <div id="div-head">
+            <header>
+                <img src="images/Logo-fin.png" alt="logo-mini">
+                <nav>
+                    <ul class="ul-topMenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="li-topMenu_rightMargin"><a href="#">Support</a></li>
+                        <li><a href="#" download="">
+                            <button class="button-normal">Download</button>
+                        </a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="div-head_main">
+                <div class="div-head_text">
+                    <h1 class="h1-biggest">Lorem ipsum is simply<br>dummy text of the printing and </h1>
+                    <p class="p-normal">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry<br>Lorem
+                        Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown</p>
+                    <a href="#" download="">
                         <button class="button-normal">Download</button>
-                    </a></li>
-                </ul>
-            </nav>
-        </header>
+                    </a>
+                </div>
 
-        <div class="div-head_main">
-            <div class="div-head_text">
-                <h1 class="h1-biggest">Lorem ipsum is simply<br>dummy text of the printing and </h1>
-                <p class="p-normal">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry<br>Lorem
-                    Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown</p>
-                <a href="#" download=""><button class="button-normal">Download</button></a>
+                <img src="images/img_cat_png.png" alt="cat_box">
+            </div>
+        </div>
+
+        <main>
+            <section class="section-main1">
+                <img src="images/img_0.png" class="img-normal" alt="">
+                <div class="div-main1-section">
+                    <h2 class="h2-big">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</h2>
+                    <p class="p-normal">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section-main2">
+                <h2 class="h2-main-section">dummy text of the printing and dummy</h2>
+                <p class="p-main-section">Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting
+                    industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown</p>
+
+                <div class="div-catImages" id="div-infiniteScroll">
+                    <img src="images/img_1.png" class="img-list" alt="">
+                    <img src="images/img_2.png" class="img-list" alt="">
+                    <img src="images/img_3.png" class="img-list" alt="">
+                    <img src="images/img_4.png" class="img-list" alt="">
+                    <img src="images/img_5.png" class="img-list" alt="">
+                    <img src="images/img_6.png" class="img-list" alt="">
+                </div>
+
+                <p class="p-main-section2">Continue exploring HODU</p>
+                <button class="button-normal" id="scrollButton">
+                    Show more
+                </button>
+            </section>
+
+            <hr>
+
+            <section class="section-main_map">
+                <h2 class="h2-big">Where you'll be</h2>
+                <p class="p-map">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+                <p id="test" class="p-map"></p>
+
+                <div id="map"></div>
+
+
+            </section>
+
+
+            <section class="section-subscribe">
+                <div class="div-subscribe_text">
+                    <h3 class="h3-section_subscribe">Subscribe to our Blog post</h3>
+                    <p class="p-section_subscribe">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                        Lorem Ipsum has been the industry's standard dummy text
+                    </p>
+                </div>
+                <form action="#" class="form-subscribe" id="myForm">
+                    <img src="images/mail.png" class="img-subscribe_mail" alt="">
+                    <input type="email" id="input-sub" class="input-subscribe" placeholder="Enter your e-mail address"
+                           required>
+                    <button id="button-modal" class="button-subscribe" type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <section id="section-modal">
+                <img src="images/hodu_face.png" alt="">
+                <h3 class="h3-modal">Thank you!</h3>
+                <p class="p-modal">Lorem Ipsum is simply dummy text of the printing industry.</p>
+                <button id="button-modal_close" class="button-modal">OK! I Lovs HODU</button>
+            </section>
+
+        </main>
+        <div class="div-catBG">
+            <img src="images/img_bg.png" class="img-bg" alt="">
+
+            <a href="#div-head" id="a-scroll-topButton"><img src="images/scroll-top-btn.png" id="img-scroll-topButton"
+                                                             alt=""></a>
+
+        </div>
+
+
+        <footer>
+            <div>
+                <img src="images/Logo-fin_big.png" alt="큰 로고 이미지">
             </div>
 
-            <img src="images/img_cat_png.png" alt="cat_box">
-        </div>
+            <div>
+                <nav class="nav-footer_link">
+                    <ul class="ul-footer_link">
+                        <li><a href="https://section.blog.naver.com/"><img src="images/icon-blog.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/"><img src="images/icon-insta.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/"><img src="images/icon-facebook.png" alt=""></a></li>
+                        <li><a href="https://youtube.com/"><img src="images/icon-youtube.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
     </div>
-
-    <main>
-        <section class="section-main1">
-            <img src="images/img_0.png" class="img-normal" alt="">
-            <div class="div-main1-section">
-                <h2 class="h2-big">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</h2>
-                <p class="p-normal">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.</p>
-            </div>
-        </section>
-
-        <section class="section-main2">
-            <h2 class="h2-main-section">dummy text of the printing and dummy</h2>
-            <p class="p-main-section">Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting
-                industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
-
-            <div class="div-catImages" id="div-infiniteScroll">
-                <img src="images/img_1.png" class="img-list" alt="">
-                <img src="images/img_2.png" class="img-list" alt="">
-                <img src="images/img_3.png" class="img-list" alt="">
-                <img src="images/img_4.png" class="img-list" alt="">
-                <img src="images/img_5.png" class="img-list" alt="">
-                <img src="images/img_6.png" class="img-list" alt="">
-            </div>
-
-            <p class="p-main-section2">Continue exploring HODU</p>
-            <button class="button-normal" id="scrollButton">
-                Show more
-            </button>
-        </section>
-
-        <hr>
-
-        <section class="section-main_map">
-            <h2 class="h2-big">Where you'll be</h2>
-            <p class="p-map">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-            <p id="test" class="p-map"></p>
-
-            <div id="map"></div>
-
-
-        </section>
-
-
-        <section class="section-subscribe">
-            <div class="div-subscribe_text">
-                <h3 class="h3-section_subscribe">Subscribe to our Blog post</h3>
-                <p class="p-section_subscribe">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                    Lorem Ipsum has been the industry's standard dummy text
-                </p>
-            </div>
-            <form action="#" class="form-subscribe" id="myForm">
-                <img src="images/mail.png" class="img-subscribe_mail" alt="">
-                <input type="email" id="input-sub" class="input-subscribe" placeholder="Enter your e-mail address"
-                       required>
-                <button id="button-modal" class="button-subscribe" type="button">Subscribe</button>
-            </form>
-        </section>
-
-        <section id="section-modal">
-            <img src="images/hodu_face.png" alt="">
-            <h3 class="h3-modal">Thank you!</h3>
-            <p class="p-modal">Lorem Ipsum is simply dummy text of the printing industry.</p>
-            <button id="button-modal_close" class="button-modal">OK! I Lovs HODU</button>
-        </section>
-
-    </main>
-    <div class="div-catBG">
-        <img src="images/img_bg.png" class="img-bg" alt="">
-
-        <a href="#div-head" id="a-scroll-topButton"><img src="images/scroll-top-btn.png" id="img-scroll-topButton" alt=""></a>
-
-    </div>
-
-
-
-    <footer>
-        <div>
-            <img src="images/Logo-fin_big.png" alt="큰 로고 이미지">
-        </div>
-
-        <div>
-            <nav class="nav-footer_link">
-                <ul class="ul-footer_link">
-                    <li><a href="https://section.blog.naver.com/"><img src="images/icon-blog.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="images/icon-insta.png" alt=""></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="images/icon-facebook.png" alt=""></a></li>
-                    <li><a href="https://youtube.com/"><img src="images/icon-youtube.png" alt=""></a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </footer>
-
-
 </div>
 
 <script src="js/hoduScript.js"></script>

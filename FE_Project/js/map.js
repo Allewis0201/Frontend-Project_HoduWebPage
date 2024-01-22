@@ -20,6 +20,15 @@ var zoomControl = new kakao.maps.ZoomControl();
 // 지도의 우측에 확대 축소 컨트롤을 추가한다
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
+// 마커가 표시될 위치를 선정함.
+var markerPosition  = new kakao.maps.LatLng(33.4423379727783, 126.571449734542);
+// 마커를 생성함.
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+// 마커가 지도 위에 표시되도록 설정함.
+marker.setMap(map);
+
 /*
 let test= document.querySelector("#test");
 

@@ -33,8 +33,18 @@ time, mark, audio, video {
     font-family: Pretendard, Serif;
 }
 
-/* 전체를 flex 적용하기 위한 div 클래스*/
-.div-total {
+/* body 전체를 조작하는 div css*/
+.div-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 총 4개의 레이아웃을 조작하는 div css*/
+.div-total
+{
+    width: 1920px;
     display: flex;
     flex-direction: column;
     justify-content: center;
