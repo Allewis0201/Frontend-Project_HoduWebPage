@@ -13,7 +13,7 @@ subscribeButton.addEventListener('click',()=>{
     else if(email.indexOf("@") != -1)
     {
         console.log("test2");
-        if(email.length >= 3)
+        if(email.length >= 7)
         {
             myModal.style.display = 'flex';
         }

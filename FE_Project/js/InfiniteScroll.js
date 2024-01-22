@@ -32,6 +32,7 @@ async function fetchImages(pageNum){
     } catch (error) {
         console.error('데이터를 가져오는데 문제가 발생했습니다 :', error);
     }
+
 }
 
 function makeImageList(datas)
