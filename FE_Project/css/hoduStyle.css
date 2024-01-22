@@ -94,7 +94,7 @@ a:link, a:visited, a:hover, a:active
     margin-right: 19px
 }
 
-.button-download
+.button-normal
 {
     background: #D97652;
     width: 140px;
@@ -243,6 +243,28 @@ span
     line-height: 20px;
 }
 
+.button-stop
+{
+    background: #D97652;
+    width: 140px;
+    height: 50px;
+
+    border: none;
+    border-radius: 40px;
+
+    flex-shrink: 0;
+
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 20px; /* 125% */
+
+    position: sticky;
+}
+
 
 .div-catImages
 {
@@ -319,6 +341,7 @@ hr
 {
     position: relative;
     top: 80px;
+    z-index: 3;
 
     border-radius: 30px;
     background: #263140;
@@ -483,8 +506,10 @@ hr
 /* 아래 고양이 얼굴 배경 css */
 .div-catBG
 {
+    position: relative;
     margin-top: 0px;
     margin-bottom: 0px;
+    z-index: 0;
 }
 
 .img-bg
@@ -494,6 +519,20 @@ hr
 
     box-sizing: border-box;
     object-fit: cover;
+}
+
+/* 탑 버튼 관련 css*/
+
+#a-scroll-topButton
+{
+    position: absolute;
+    right: 24px;
+    bottom: 19px;
+    z-index: 5;
+}
+#img-scroll-topButton:hover
+{
+    content: url("../images/scroll-top-btn-hover.png");
 }
 
 
@@ -524,16 +563,3 @@ footer
 
 
 
-/* 탑 버튼 관련 css*/
-
-#a-scroll-topButton
-{
-    position: fixed;
-    right: 10%;
-    bottom: 10%;
-    z-index: 15;
-}
-#img-scroll-topButton:hover
-{
-    content: url("../images/scroll-top-btn-hover.png");
-}

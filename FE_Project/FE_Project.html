@@ -21,7 +21,7 @@
                     <li><a href="#">About</a></li>
                     <li class="li-topMenu_rightMargin"><a href="#">Support</a></li>
                     <li><a href="#" download="">
-                        <button class="button-download">Download</button>
+                        <button class="button-normal">Download</button>
                     </a></li>
                 </ul>
             </nav>
@@ -32,7 +32,7 @@
                 <h1 class="h1-biggest">Lorem ipsum is simply<br>dummy text of the printing and </h1>
                 <p class="p-normal">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry<br>Lorem
                     Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown</p>
-                <button class="button-download">Download</button>
+                <button class="button-normal">Download</button>
             </div>
 
             <img src="images/img_cat_png.png" alt="cat_box">
@@ -54,6 +54,8 @@
                 industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown</p>
 
+            <button id="button-stop" class="button-stop">Stop Scroll</button>
+
 
             <div class="div-catImages" id="div-infiniteScroll">
                 <img src="images/img_1.png" class="img-list" alt="">
@@ -65,7 +67,7 @@
             </div>
 
             <p class="p-main-section2">Continue exploring HODU</p>
-            <button class="button-download" id="scrollButton">
+            <button class="button-normal" id="scrollButton">
                 Show more
             </button>
         </section>
@@ -76,12 +78,9 @@
             <h2 class="h2-big">Where you'll be</h2>
             <p class="p-map">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
             <p id="test" class="p-map"></p>
-            <!--    지도 추가 예정-->
 
             <div id="map"></div>
 
-            <script type="text/javascript"
-                    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bff396b17a9ff48bf012183a9e2169a9"></script>
 
         </section>
 
@@ -112,6 +111,7 @@
     </main>
     <div class="div-catBG">
         <img src="images/img_bg.png" class="img-bg" alt="">
+        <a href="#div-head" id="a-scroll-topButton"><img src="images/scroll-top-btn.png" id="img-scroll-topButton" alt=""></a>
     </div>
 
 
@@ -135,13 +135,15 @@
 
 
 
-    <a href="#div-head" id="a-scroll-topButton"><img src="images/scroll-top-btn.png" id="img-scroll-topButton" alt=""></a>
+
 
 
 </div>
 
 <script src="js/hoduScript.js"></script>
 <script src="js/InfiniteScroll.js"></script>
+<script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bff396b17a9ff48bf012183a9e2169a9"></script>
 <script src="js/map.js"></script>
 
 

@@ -6,34 +6,6 @@ let myForm = document.querySelector('#myForm');
 subscribeButton.addEventListener('click',()=>{
     let email = document.querySelector("#input-sub").value;
 
-    /*if(!myForm.checkValidity())
-    {
-        alert("제대로 된 이메일 형식이 아닙니다");
-    }
-
-    if(!email)
-    {
-        console.log("test1");
-        return;
-    }
-    else if(email.indexOf("@") != -1)
-    {
-        console.log("test2");
-        if(email.length >= 7)
-        {
-            myModal.style.display = 'flex';
-        }
-        else
-        {
-            return;
-        }
-    }
-    else
-    {
-        return;
-    }*/
-
-
     event.preventDefault();
     if(!email)
     {
