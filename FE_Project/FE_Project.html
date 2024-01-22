@@ -11,15 +11,15 @@
 </head>
 <body>
 
-<div class="total">
+<div class="div-total">
     <div id="div-head">
         <header>
             <img src="images/Logo-fin.png" alt="logo-mini">
             <nav>
-                <ul class="nav-topMenu">
+                <ul class="ul-topMenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li id="li-topMenu_rightMargin"><a href="#">Support</a></li>
+                    <li class="li-topMenu_rightMargin"><a href="#">Support</a></li>
                     <li><a href="#" download="">
                         <button class="button-download">Download</button>
                     </a></li>
@@ -38,10 +38,6 @@
             <img src="images/img_cat_png.png" alt="cat_box">
         </div>
     </div>
-
-    <section>
-
-    </section>
 
     <main>
         <section class="section-main1">
@@ -98,24 +94,30 @@
                     Lorem Ipsum has been the industry's standard dummy text
                 </p>
             </div>
-            <form action="#" class="form-subscribe">
+            <form action="#" class="form-subscribe" id="myForm">
                 <img src="images/mail.png" class="img-subscribe_mail" alt="">
                 <input type="email" id="input-sub" class="input-subscribe" placeholder="Enter your e-mail address"
                        required>
                 <button id="button-modal" class="button-subscribe" type="button">Subscribe</button>
             </form>
         </section>
-        <a href="#div-head" id="a-scroll-topButton"><img src="images/scroll-top-btn.png" id="img-scroll-topButton" alt=""></a>
+
+        <section id="section-modal">
+            <img src="images/hodu_face.png" alt="">
+            <h3 class="h3-modal">Thank you!</h3>
+            <p class="p-modal">Lorem Ipsum is simply dummy text of the printing industry.</p>
+            <button id="button-modal_close" class="button-modal">OK! I Lovs HODU</button>
+        </section>
+
     </main>
     <div class="div-catBG">
         <img src="images/img_bg.png" class="img-bg" alt="">
-        <!--<img class = "img-top" src="scroll-top-btn.png" alt="">-->
     </div>
 
 
     <footer>
         <div>
-            <img src="images/Logo-fin_big.png" alt="">
+            <img src="images/Logo-fin_big.png" alt="큰 로고 이미지">
         </div>
 
         <div>
@@ -131,12 +133,9 @@
 
     </footer>
 
-    <section id="section-modal">
-        <img src="images/hodu_face.png" alt="">
-        <h3 class="h3-modal">Thank you!</h3>
-        <p class="p-modal">Lorem Ipsum is simply dummy text of the printing industry.</p>
-        <button id="button-modal_close" class="button-modal">OK! I Lovs HODU</button>
-    </section>
+
+
+    <a href="#div-head" id="a-scroll-topButton"><img src="images/scroll-top-btn.png" id="img-scroll-topButton" alt=""></a>
 
 
 </div>

@@ -6,7 +6,6 @@
     font-style: normal;
 }
 
-
 /* reset css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -36,7 +35,7 @@ time, mark, audio, video {
 }
 
 /* 전체를 flex 적용하기 위한 div 클래스*/
-.total
+.div-total
 {
     display: flex;
     flex-direction: column;
@@ -44,7 +43,7 @@ time, mark, audio, video {
     align-items: center;
 }
 
-/*header 관련 css*/
+/*head 관련 css*/
 
 /*top menu css*/
 #div-head
@@ -66,7 +65,12 @@ header
     align-items: center;
 }
 
-.nav-topMenu
+ul
+{
+    list-style: none;
+}
+
+.ul-topMenu
 {
     display: flex;
     align-items: center;
@@ -79,18 +83,13 @@ header
     line-height: 20px;
 }
 
-ul
-{
-    list-style: none;
-}
-
 a:link, a:visited, a:hover, a:active
 {
     text-decoration: none;
     color: black;
 }
 
-#li-topMenu_rightMargin
+.li-topMenu_rightMargin
 {
     margin-right: 19px
 }
@@ -116,7 +115,7 @@ a:link, a:visited, a:hover, a:active
 }
 
 
-/* header-main css*/
+/* head의 main 관련 css*/
 
 .div-head_main
 {
@@ -165,13 +164,17 @@ main
     padding-right: 320px;
     padding-top : 80px;
     width: 1920px;
+
     box-sizing: border-box;
 }
 
+/* main 안 첫번째 section 관련 css*/
 .section-main1
 {
     display: flex;
+    justify-content: center;
     gap: 110px;
+
     margin-bottom: 120px;
 }
 
@@ -181,25 +184,14 @@ main
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
 }
 
-.img-list
+
+.div-main1-section
 {
-    border-radius: 30px;
-    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
-    width: 378px;
-    height: 378px;
-    z-index: 1;
-
-    transform: scale(1.0);
-    transition: transform 1.0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 }
-
-.img-list:hover
-{
-    transform: scale(1.3);
-    transition: transform 1.0s;
-    z-index: 10;
-}
-
 
 .h2-big
 {
@@ -211,15 +203,8 @@ main
     line-height: 45px; /* 125% */
 }
 
-.div-main1-section
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-}
 
-
+/* main 안 2번째 section 관련 css */
 .section-main2
 {
     text-align: center;
@@ -259,12 +244,30 @@ span
 }
 
 
-
 .div-catImages
 {
     display: flex;
     gap: 72px;
     flex-wrap: wrap;
+}
+
+.img-list
+{
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
+    width: 378px;
+    height: 378px;
+    z-index: 1;
+
+    transform: scale(1.0);
+    transition: transform 1.0s;
+}
+
+.img-list:hover
+{
+    transform: scale(1.3);
+    transition: transform 1.0s;
+    z-index: 2;
 }
 
 .p-main-section2
@@ -289,6 +292,8 @@ hr
     margin-bottom: 68px;
 }
 
+
+/* main 안 3번째 section 관련 css*/
 .p-map
 {
     color: #606367;
@@ -309,6 +314,7 @@ hr
 }
 
 
+/* main 안 4번째 section 관련 css */
 .section-subscribe
 {
     position: relative;
@@ -403,63 +409,7 @@ hr
     margin-right: 6px;
 
 }
-
-.div-catBG
-{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-
-.img-bg
-{
-    width: 1920px;
-    height: 340px;
-
-    box-sizing: border-box;
-    object-fit: cover;
-}
-
-
-.img-top
-{
-    position: relative;
-
-    right: 70px;
-    bottom: 19px;
-}
-
-.img-top:hover
-{
-    content: url("../images/scroll-top-btn-hover.png");
-}
-
-
-footer
-{
-    padding-left: 320px;
-    padding-right: 320px;
-
-    width: 1920px;
-    box-sizing: border-box;
-
-    margin-top: 45px;
-    margin-bottom: 45px;
-
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ul-footer_link
-{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-
+/* modal 창 관련 css*/
 #section-modal
 {
     width: 600px;
@@ -528,17 +478,60 @@ footer
 
 }
 
+/* main 관련 css 종료*/
+
+/* 아래 고양이 얼굴 배경 css */
+.div-catBG
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.img-bg
+{
+    width: 1920px;
+    height: 340px;
+
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+
+/* footer 관련 css */
+footer
+{
+    padding-left: 320px;
+    padding-right: 320px;
+
+    width: 1920px;
+    box-sizing: border-box;
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-footer_link
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 
 
-
+/* 탑 버튼 관련 css*/
 
 #a-scroll-topButton
 {
     position: fixed;
     right: 10%;
     bottom: 10%;
-    z-index: 100;
+    z-index: 15;
 }
 #img-scroll-topButton:hover
 {

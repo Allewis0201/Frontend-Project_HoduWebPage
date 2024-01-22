@@ -13,11 +13,20 @@ scrollOn.addEventListener('click',()=> {
     console.log("test");
     if(scroll===true)
     {
-        fetchImages();
+        makeImages();
     }
 })
 
-async function fetchImages(pageNum){
+window.addEventListener("scroll",() =>{
+
+    if(scroll===true) {
+        if (window.innerHeight + document.documentElement.scrollTop >= document.querySelector("#div-infiniteScroll").offsetHeight) {
+            makeImages(pageToFetch += 1);
+        }
+    }
+})
+
+async function makeImages(pageNum){
     try {
         const response = await fetch(`https://picsum.photos/v2/list?page=${pageNum}&limit=10`);
         if (!response.ok) {
@@ -25,8 +34,6 @@ async function fetchImages(pageNum){
         }
 
         const datas = await response.json();
-        console.log(datas);
-
         makeImageList(datas);
 
     } catch (error) {
@@ -38,18 +45,10 @@ async function fetchImages(pageNum){
 function makeImageList(datas)
 {
     datas.forEach((item) => {
-        imageList.innerHTML += `<img src = "${item.download_url}" class = "img-list" alt = '' ></li>`
+        /*imageList.innerHTML += `<img src = "${item.download_url}" class = "img-list" alt = '' ></li>`*/
+
+        imageList.insertAdjacentHTML('beforeend',`<img src = "${item.download_url}" class = "img-list" alt = '' ></li>`)
     });
 }
 
-window.addEventListener("scroll",() =>{
-    // 스크롤이 상단으로부터 얼마나 이동 했는지 알아야합니다. (뷰포트의 높이 + 스크롤의 길이)
-    // 화면에 로딩된 페이지의 전체 높이를 알아야함
-    // 뷰포트의 높이 + 스크롤 된 길이 + 5 ~ 10 px 여유 길이 === 화면에 로딩된 페이지의 전체 높이
 
-    if(scroll===true) {
-        if (window.innerHeight + document.documentElement.scrollTop >= document.querySelector("#div-infiniteScroll").offsetHeight) {
-            fetchImages(pageToFetch += 1);
-        }
-    }
-})
