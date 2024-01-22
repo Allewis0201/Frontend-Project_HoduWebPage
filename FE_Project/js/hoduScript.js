@@ -3,7 +3,29 @@ let subscribeButton = document.querySelector('#button-modal');
 let closeButton = document.querySelector('#button-modal_close');
 
 subscribeButton.addEventListener('click',()=>{
-    myModal.style.display = 'flex';
+    let email = document.querySelector("#input-sub").value;
+
+    if(!email)
+    {
+        console.log("test1");
+        return;
+    }
+    else if(email.indexOf("@") != -1)
+    {
+        console.log("test2");
+        if(email.length >= 3)
+        {
+            myModal.style.display = 'flex';
+        }
+        else
+        {
+            return;
+        }
+    }
+    else
+    {
+        return;
+    }
 });
 
 closeButton.addEventListener('click',()=>{

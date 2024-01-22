@@ -13,7 +13,8 @@
 
 <div class = "total">
 
-<div class = "div-head">
+
+<div id = "div-head">
     <header>
         <img src="Logo-fin.png" alt="logo-mini">
         <nav>
@@ -74,20 +75,13 @@
     <section class="section-main_map">
         <h2 class = "h2-big">Where you'll be</h2>
         <p class="p-map">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        <p id="test" class="p-map"></p>
         <!--    지도 추가 예정-->
 
         <div id="map"></div>
 
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bff396b17a9ff48bf012183a9e2169a9"></script>
-        <script>
-            let mapContainer = document.getElementById('map'), // 지도를 표시할 div
-                mapOption = {
-                    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                    level: 3 // 지도의 확대 레벨
-                };
-            // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-            let map = new kakao.maps.Map(mapContainer, mapOption);
-        </script>
+
     </section>
 
 
@@ -101,8 +95,8 @@
         </div>
         <form action="#" class ="form-subscribe">
                 <img src="mail.png" class = "img-subscribe_mail" alt="">
-                <input type="email" class="input-subscribe" placeholder="Enter your e-mail address" required>
-                <button id= "button-modal" class = "button-subscribe">Subscribe</button>
+                <input type="email" id = "input-sub" class="input-subscribe" placeholder="Enter your e-mail address" required>
+                <button id= "button-modal" class = "button-subscribe" type="submit">Subscribe</button>
         </form>
     </section>
 </main>
@@ -139,10 +133,13 @@
     <button id = "button-modal_close" class="button-modal">OK! I Lovs HODU</button>
 </section>
 
-
-<script src="js/hoduScript.js"></script>
-    <script src="js/InfiniteScroll.js"></script>
+    <a href="#div-head" id="a-scroll-topButton"><img src="scroll-top-btn.png" id = "img-scroll-topButton" alt=""></a>
 
 </div>
+<script src="js/hoduScript.js"></script>
+<script src="js/InfiniteScroll.js"></script>
+<script src="js/map.js"></script>
+
+
 </body>
 </html>
