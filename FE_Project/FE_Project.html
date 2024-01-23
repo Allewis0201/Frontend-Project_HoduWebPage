@@ -6,11 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Hodu</title>
-    <link rel="stylesheet" href="css/hoduStyle.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/heading.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/subscribe.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/catBackground.css">
+    <link rel="stylesheet" href="css/topButton.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/map.css">
 
-    <script defer src="js/hoduScript.js"></script>
-    <script defer src="js/InfiniteScroll.js"></script>
-    <script defer src="js/map.js"></script>
+    <script defer src="js/subscribe.js"></script>
+    <script defer src="js/infiniteScroll.js"></script>
+    <script defer src="js/createMap.js"></script>
+    <script defer src="js/mapControl.js"></script>
+    <script defer src="js/marker.js"></script>
+    <script defer src="js/getAddress.js"></script>
 
 </head>
 <body>
@@ -85,7 +97,26 @@
             <section class="section-main_map">
                 <h2 class="h2-big">Where you'll be</h2>
                 <p class="p-map" id="p-address">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-                <div id="map"></div>
+
+                <div class="map_wrap">
+
+
+                    <div id="map"></div>
+                    <!-- 지도타입 컨트롤 div 입니다 -->
+                    <div class="custom_typecontrol radius_border">
+                        <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+                        <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+                    </div>
+                    <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+                    <div class="custom_zoomcontrol radius_border">
+                        <span onclick="zoomIn()"><img
+                                src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png"
+                                alt="확대"></span>
+                        <span onclick="zoomOut()"><img
+                                src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png"
+                                alt="축소"></span>
+                    </div>
+                </div>
 
 
             </section>
