@@ -4,10 +4,12 @@ let pageToFetch = 1;
 
 let scroll = false;
 
+// 페이지 리로드 될 시 무한 스크롤 설정 값을 false로 설정합니다
 window.addEventListener("beforeunload",()=>{
     scroll = false;
 })
 
+// 버튼 누를 시 무한 스크롤 설정 값을 true로 설정합니다
 scrollOn.addEventListener('click',()=> {
     scroll = true;
     if(scroll===true)
@@ -16,6 +18,7 @@ scrollOn.addEventListener('click',()=> {
     }
 })
 
+// 설정 값이 true일 때 스크롤을 하면 이미지를 불러옵니다
 window.addEventListener("scroll",() =>{
 
     if(scroll===true) {
@@ -25,6 +28,7 @@ window.addEventListener("scroll",() =>{
     }
 })
 
+// 이미지를 불러와 HTML 요소에 삽입합니다.
 async function makeImages(pageNum){
     try {
         const response = await fetch(`https://cataas.com/api/cats?limit=1&skip=${pageNum}`);
@@ -41,11 +45,11 @@ async function makeImages(pageNum){
 
 }
 
+//이미지를 HTML 요소에 삽입합니다
 function makeImageList(datas)
 {
     datas.forEach((item) => {
-        /*imageList.innerHTML += `<img src = "${item.download_url}" class = "img-list" alt = '' ></li>`*/
-        imageList.insertAdjacentHTML('beforeend',`<img src = "https://cataas.com/cat/${item._id}" class = "img-list" alt = '' ></li>`)
+        imageList.insertAdjacentHTML('beforeend',`<img src = "https://cataas.com/cat/${item._id}" class = "img-list" alt = '불러온 고양이 사진들'></li>`);
     });
 }
 
