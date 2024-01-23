@@ -1,4 +1,4 @@
-// 마커가 표시될 위치를 선정함.
+// 마커가 표시될 위치를 선정합니다
 var markerPosition  = new kakao.maps.LatLng(33.4423379727783, 126.571449734542);
 // 마커를 생성합니다
 var marker = new kakao.maps.Marker({
