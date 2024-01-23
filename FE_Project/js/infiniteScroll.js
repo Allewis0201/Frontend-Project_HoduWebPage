@@ -12,21 +12,24 @@ window.addEventListener("beforeunload",()=>{
 // 버튼 누를 시 무한 스크롤 설정 값을 true로 설정합니다
 scrollOn.addEventListener('click',()=> {
     scroll = true;
-    if(scroll===true)
-    {
-        makeImages();
-    }
 })
 
-// 설정 값이 true일 때 스크롤을 하면 이미지를 불러옵니다
-window.addEventListener("scroll",() =>{
+// 쓰로틀링
+let timerForThrottle;
 
-    if(scroll===true) {
-        if (window.innerHeight + document.documentElement.scrollTop >= document.querySelector("#div-infiniteScroll").offsetHeight) {
-            makeImages(pageToFetch += 1);
-        }
+// 설정 값이 true일 때 스크롤을 하면 이미지를 불러옵니다(쓰로틀링 적용)
+window.addEventListener('scroll', function() {
+    if (!timerForThrottle) {
+        timerForThrottle = setTimeout(function() {
+            if(scroll===true) {
+                if (window.innerHeight + document.documentElement.scrollTop >= document.querySelector("#div-infiniteScroll").offsetHeight) {
+                    makeImages(pageToFetch += 1);
+                }
+            }
+            timerForThrottle = null;
+        }, 100);
     }
-})
+});
 
 // 이미지를 불러와 HTML 요소에 삽입합니다.
 async function makeImages(pageNum){
