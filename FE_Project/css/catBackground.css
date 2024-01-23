@@ -1,0 +1,15 @@
+/* 아래 고양이 얼굴 배경 css */
+.div-catBG {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 0;
+}
+
+.img-bg {
+    width: 1920px;
+    height: 340px;
+
+    box-sizing: border-box;
+    object-fit: cover;
+}

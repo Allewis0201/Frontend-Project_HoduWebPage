@@ -1,0 +1,22 @@
+/* footer 관련 css */
+footer {
+    padding-left: 320px;
+    padding-right: 320px;
+
+    width: 1920px;
+    box-sizing: border-box;
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-footer_link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

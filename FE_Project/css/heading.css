@@ -1,0 +1,100 @@
+/*head 관련 css*/
+
+/*top menu css*/
+#div-head {
+    background-color: #F2E9D8;
+    width: 1920px;
+
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-top: 31px;
+
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.ul-topMenu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    font-family: Pretendard, Serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.li-topMenu_rightMargin {
+    margin-right: 19px
+}
+
+.button-normal {
+    background-color: #D97652;
+    width: 140px;
+    height: 50px;
+
+    border: none;
+    border-radius: 40px;
+
+    flex-shrink: 0;
+
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 20px; /* 125% */
+}
+
+
+/* head의 main 관련 css*/
+
+.div-head_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 32px;
+}
+
+.div-head_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.h1-biggest {
+    color: #000000;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 60px; /* 125% */
+}
+
+.p-normal {
+    color: #000000;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 20px; /* 125% */
+}
