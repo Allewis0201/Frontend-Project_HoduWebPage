@@ -1,15 +1,16 @@
 # Frontend-Project_HoduWebPage
 2024년 상반기 오르미 4기 프론트엔드 프로젝트(호두 웹페이지 제작)
 
-웹페이지 주소
-https://allewis0201.github.io/Frontend-Project_HoduWebPage/FE_Project/FE_Project.html
+<h1>웹페이지 주소</h1>
+<a href="https://allewis0201.github.io/Frontend-Project_HoduWebPage/FE_Project/FE_Project.html">프로젝트 결과물 확인해보기 </a>
 
 
-<h1>참고용으로 주셨던 피그마의 웹페이지와 프로젝트 결과물과의 차이</h1>
 
-- <h2>부족한 점</h2>
+<h2>참고용으로 주셨던 피그마의 웹페이지와 프로젝트 결과물과의 차이</h2>
+
+- <h3>부족한 점</h3>
   - 카카오 맵의 컨트롤 버튼인 새로고침과 전체 화면 버튼이 없음<br>
-- <h2>개선 및 추가된 점</h2>
+- <h3>개선 및 추가된 점</h3>
   - script를 body 아래가 아니라 head로 올려 script 로딩 성능을 개선함<br>
   - HODU 로고 이미지를 눌렀을 때 현재 사이트로 이동됨<br>
   - 맨 위 메뉴를 눌렀을 때 현재 사이트로 이동 됨<br>
@@ -25,7 +26,7 @@ https://allewis0201.github.io/Frontend-Project_HoduWebPage/FE_Project/FE_Project
   - width가 1920px 이하인 경우 탑 버튼이 사용자가 스크롤을 해도 우측 하단에 달라붙어서 따라옴<br>
   - width가 1921px 이상인 경우 탑 버튼이 아래에 있는 고양이 이미지 하단에 위치함<br>
   - footer 아래에 있는 4개의 아이콘을 누르면 아이콘에 맞는 사이트로 이동함<br>
-- <h2>리팩토링 한 점</h2>
+- <h3>리팩토링 한 점</h3>
   - 기존에 1개로 만들었던 style 파일을 구역별로 나눠서 각각의 css 파일로 분리를 진행함<br>
   - 기존에 1개로 만들었던 js 파일을 구역별로 나눠서 각각의 js 파일로 분리를 진행함<br>
   - style 클래스 이름 규칙은 (html태그)-(부모태그가 존재할 시 부모태그)_(역할)로 맞추고자 하였음<br>
