@@ -2,7 +2,7 @@
 2024년 상반기 오르미 4기 프론트엔드 프로젝트(호두 웹페이지 제작)
 
 <h1>웹페이지 주소</h1>
-<a href="https://allewis0201.github.io/Frontend-Project_HoduWebPage/FE_Project/FE_Project.html">프로젝트 결과물 확인해보기 </a>
+<a href="https://allewis0201.github.io/frontend-project-hoduwebpage/FE_Project/FE_Project.html">프로젝트 결과물 확인해보기 </a>
 
 
 
